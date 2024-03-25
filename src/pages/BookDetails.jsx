@@ -44,7 +44,8 @@ const BookDetails = () => {
                     </div>
                     <div className="pt-6 pb-4 space-y-3">
                         <table>
-                            <tr>
+                           <tbody>
+                           <tr>
                                 <td className="pr-8 text-[#131313B3]">Number of Pages:</td>
                                 <td className="p-1 text-[#131313] font-semibold">{totalPages}</td>
                             </tr>
@@ -60,6 +61,7 @@ const BookDetails = () => {
                                 <td className="pr-8 text-[#131313B3]">Rating:</td>
                                 <td className="p-1 text-[#131313] font-semibold">{rating}</td>
                             </tr>
+                           </tbody>
                         </table>
                        <div>
 
