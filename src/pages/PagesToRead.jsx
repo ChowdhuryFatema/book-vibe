@@ -1,5 +1,5 @@
 
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { getStoredBooks } from '../utlis/localStorage';
 import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
@@ -71,30 +71,31 @@ const PagesToRead = () => {
 
 
     return (
-        <div className='flex flex-col justify-center items-center '>
+        <div className='flex flex-col justify-center items-center'>
             <div className='max-w-7xl mx-auto p-10 mt-5 rounded-xl bg-[#13131308]'>
-                <BarChart
-                    width={900}
-                    height={400}
-                    data={readBooks}
-                    margin={{
-                        top: 20,
-                        right: 30,
-                        left: 20,
-                        bottom: 5,
-                    }}
-                >
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="bookName" />
-                    <YAxis />
-                    <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
-                        {readBooks.map((entry, index) => (
-                            <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-                        ))}
-                    </Bar>
-                    <Tooltip content={<CustomTooltip />} />
-                    <Legend />
-                </BarChart>
+                    <BarChart
+                        width={900}
+                        height={400}
+                        data={readBooks}
+                        margin={{
+                            top: 20,
+                            right: 30,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="bookName" />
+                        <YAxis />
+                        <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+                            {readBooks.map((entry, index) => (
+                                <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+                            ))}
+                        </Bar>
+                        <Tooltip content={<CustomTooltip />} />
+                        <Legend />
+                    </BarChart>
+
             </div>
         </div>
 
@@ -103,3 +104,6 @@ const PagesToRead = () => {
 
 
 export default PagesToRead;
+
+
+

@@ -13,6 +13,8 @@ const Header = () => {
                     <NavLink to="/">Home</NavLink>
                     <NavLink to="/listed-books">Listed Books</NavLink>
                     <NavLink to='/pages-read'>Pages to Read</NavLink>
+                    <NavLink to='/team'>Our Team</NavLink>
+                    <NavLink to='/contact'>Contact Us</NavLink>
 
                     </ul>
                 </div>
@@ -23,6 +25,8 @@ const Header = () => {
                 <NavLink className='hover:bg-[#23BE0A] hover:text-white py-2 px-4 rounded-lg' to="/">Home</NavLink>
                 <NavLink className='hover:bg-[#23BE0A] hover:text-white py-2 px-4 rounded-lg' to="/listed-books">Listed Books</NavLink>
                 <NavLink className='hover:bg-[#23BE0A] hover:text-white py-2 px-4 rounded-lg' to='/pages-read'>Pages to Read</NavLink>
+                <NavLink className='hover:bg-[#23BE0A] hover:text-white py-2 px-4 rounded-lg' to='/team'>Our Team</NavLink>
+                <NavLink className='hover:bg-[#23BE0A] hover:text-white py-2 px-4 rounded-lg' to='/contact'>Contact Us</NavLink>
                 </ul>
             </div>
             <div className="navbar-end">
