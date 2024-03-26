@@ -7,6 +7,23 @@ const ListedBooks = () => {
 
     return (
         <div className="max-w-7xl mx-auto px-5">
+            <div className="text-center">
+           <details className="dropdown mt-5">
+                <summary className="m-1 btn text-white bg-[#23BE0A] hover:bg-[#37ce20] text-lg">Sort By
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+                </summary>
+                <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                    <li><a>Rating</a></li>
+                    <li><a>Number of pages</a></li>
+                    <li><a>Publisher year</a></li>
+
+                </ul>
+            </details>
+           </div>
+
+
             <div className="flex items-center overflow-x-auto overflow-y-hidden flex-nowrap dark:bg-gray-100 dark:text-gray-800 my-5">
                 <Link 
                 to=''
