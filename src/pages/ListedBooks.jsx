@@ -9,7 +9,7 @@ const ListedBooks = () => {
         <div className="max-w-7xl mx-auto px-5">
             <div className="text-center">
            <details className="dropdown mt-5">
-                <summary className="m-1 btn text-white bg-[#23BE0A] hover:bg-[#37ce20] text-lg">Sort By
+                <summary className="m-1 btn text-white bg-[#23BE0A] hover:bg-[#37ce20] md:text-lg">Sort By
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
                 </svg>

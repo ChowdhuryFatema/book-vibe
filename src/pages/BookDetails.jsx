@@ -1,5 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { getStoredBooks, getStoredWishList, saveToLocalStorage, saveWishListToLocalStorage } from "../utlis/localStorage";
+import { getStoredBooks,  saveToLocalStorage, saveWishListToLocalStorage } from "../utlis/localStorage";
 import { toast } from "react-toastify";
 
 

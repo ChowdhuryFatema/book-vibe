@@ -1,24 +1,23 @@
-
+import { Link } from 'react-router-dom';
+import bannerImg from './../assets/banner.png';
 
 const Banner = () => {
     return (
-        <section className="dark:bg-gray-100 dark:text-gray-800">
-        <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
-            <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
-                <h1 className="text-5xl font-bold leading-none sm:text-6xl">
-                    <span className="dark:text-violet-600">Books to freshen up your bookshelf</span>
-                </h1>
-                
-                <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-                    
-                    <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border rounded dark:border-gray-800">Malesuada</a>
+      <div className='mx-5'>
+          <div className='bg-[#1313130D] min-h-100vh max-w-7xl mx-auto rounded-2xl py-10 md:py-16 mx-5-auto'>
+            <div className='flex lg:flex-row justify-center lg:justify-start items-center flex-col-reverse'>
+                <div className='flex-1 lg:pl-20 p-5 mt-5 lg:mt-0'>
+                    <h2 className='text-3xl md:text-5xl lg:text-6xl font-bold leading-[40px] md:leading-[60px]  lg:leading-[70px]'>Books to freshen <br /> up your bookshelf</h2>
+                    <Link to='/listed-books' className="btn md:text-lg text-white bg-[#23BE0A] hover:bg-[#40df28] me-2 md:mt-10 mt-5">View The List</Link>
+                </div>
+                <div className='flex-1 flex justify-center'>
+                    <div className='w-1/2 md:w-full'>
+                    <img src={bannerImg} alt="" />
+                    </div>
                 </div>
             </div>
-            <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
-                <img src="assets/svg/Business_SVG.svg" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
-            </div>
         </div>
-    </section>
+      </div>
     );
 };
 

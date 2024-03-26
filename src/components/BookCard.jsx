@@ -15,7 +15,7 @@ const BookCard = ({book}) => {
                 <img alt="" className="w-full rounded-2xl h-60 dark:bg-gray-500 object-cover" src={image} />
             </a>
             <div className="flex flex-col flex-1 py-5 space-y-2">
-                <ul className='flex gap-2'>
+                <ul className='flex flex-wrap gap-2'>
                     {
                         tags.map((tag, idx) => <a className='py-1 px-3 rounded-full bg-[#23BE0A0D] text-[#23BE0A]' key={idx}>#{tag}</a>)
                     }

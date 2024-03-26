@@ -10,12 +10,12 @@ const ReadCard = ({ book }) => {
 
     return (
         <div className='max-w-5xl mx-auto px-5'>
-            <div className='grid grid-cols-1 lg:grid-cols-12 gap-5 mb-5 border p-3 rounded-lg'>
-                <div className='col-span-auto w-full lg:col-span-4'>
+            <div className='grid grid-cols-1 md:grid-cols-12 gap-5 mb-5 border p-3 rounded-lg'>
+                <div className='col-span-auto w-full md:col-span-4'>
                     <img className='rounded-sm w-full h-60 lg:h-72' 
                     src={image} alt="" />
                 </div>
-                <div className='col-span-auto lg:col-span-8 mt-3'>
+                <div className='col-span-auto md:col-span-8 mt-3'>
                     <div className='space-y-3 md:space-y-5'>
                         <h1 className="text-2xl md:text-3xl font-bold">{bookName}</h1>
                         <p>By: <span className='font-bold'>{author}</span></p>
@@ -37,7 +37,7 @@ const ReadCard = ({ book }) => {
                             <span className="text-xs">Pages {totalPages}</span>
                         </div>
                         <hr />
-                        <div className='flex flex-wrap gap-5 justify-around items-center'>                        
+                        <div className='flex flex-wrap gap-5 items-center'>                        
                         <button className="btn btn-sm rounded-full bg-sky-100 text-sky-500">Category: {category}</button>              
                         <button className="btn btn-sm rounded-full bg-red-100 text-red-500">Rating: {rating}</button>
                         <a className="btn text-white bg-[#23BE0A] hover:bg-[#40df28]">View Details</a>
