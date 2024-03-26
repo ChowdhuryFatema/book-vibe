@@ -28,7 +28,9 @@ const ListedBooks = () => {
                     <span>Wishlist Books</span>
                 </Link>
             </div>
-            <Outlet></Outlet>
+            <div className="my-6">
+                <Outlet></Outlet>
+            </div>
         </div>
     );
 };

@@ -1,5 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveToLocalStorage } from "../utlis/localStorage";
+import { getStoredBooks, getStoredWishList, saveToLocalStorage, saveWishListToLocalStorage } from "../utlis/localStorage";
+import { toast } from "react-toastify";
 
 
 const BookDetails = () => {
@@ -17,6 +18,17 @@ const BookDetails = () => {
 
         const handleRead = () => {
             saveToLocalStorage(id)
+        }
+        const handleWishlist = () => {
+
+            const storedReadBook = getStoredBooks();
+
+            const exists = storedReadBook.find(b => b == id)
+            if( exists ){
+                return toast.error("You have Already Read this Book");
+            }
+
+            saveWishListToLocalStorage(id)
         }
 
     return (
@@ -69,7 +81,7 @@ const BookDetails = () => {
                         <a onClick={handleRead} className="btn text-lg me-3 border border-[#1313134D] bg-transparent">Read</a>
 
 
-                        <a className="btn text-lg text-white bg-[#59C6D2] hover:bg-[#12daf0]">Wishlist</a>
+                        <a onClick={handleWishlist} className="btn text-lg text-white bg-[#59C6D2] hover:bg-[#12daf0]">Wishlist</a>
 
 
                        </div>

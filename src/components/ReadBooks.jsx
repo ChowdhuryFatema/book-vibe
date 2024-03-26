@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredBooks } from "../utlis/localStorage";
-import BookCard from "./BookCard";
+import ReadCard from "./ReadCard";
 
 
 
@@ -14,12 +14,10 @@ const ReadBooks = () => {
     useEffect(() => {
         if(books.length){
             const storedReadBook = getStoredBooks();
-
             const saveCart = [];
             for(const id of storedReadBook){
                 const readBook = books.find(b => b.bookId == id)
 
-                console.log(readBook)
                 if(readBook){
                     saveCart.push(readBook);
                 }
@@ -30,9 +28,9 @@ const ReadBooks = () => {
     }, [books])
 
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div>
           {
-            displayReadBooks.map(book => <BookCard key={book.bookId} book={book}></BookCard>)
+            displayReadBooks.map(book => <ReadCard key={book.bookId} book={book}></ReadCard>)
           }
         </div>
     );
