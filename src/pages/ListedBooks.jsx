@@ -7,6 +7,11 @@ const ListedBooks = () => {
 
     return (
         <div className="max-w-7xl mx-auto px-5">
+
+            <div className="bg-[#1313130D] rounded-md">
+                <h2 className="text-2xl md:text-3xl text-center py-10 font-bold">Books</h2>
+            </div>
+
             <div className="text-center">
            <details className="dropdown mt-5">
                 <summary className="m-1 btn text-white bg-[#23BE0A] hover:bg-[#37ce20] md:text-lg">Sort By
