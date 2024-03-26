@@ -30,7 +30,7 @@ const ReadBooks = () => {
     }, [books])
 
     return (
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {
             displayReadBooks.map(book => <BookCard key={book.bookId} book={book}></BookCard>)
           }

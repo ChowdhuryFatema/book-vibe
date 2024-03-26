@@ -4,8 +4,8 @@ import { saveToLocalStorage } from "../utlis/localStorage";
 
 const BookDetails = () => {
 
-    const books = useLoaderData();
     const { id } = useParams();
+    const books = useLoaderData();
     const book = books.find(book => book.bookId == id)
     const {
         image,
