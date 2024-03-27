@@ -34,8 +34,8 @@ const BookDetails = () => {
     return (
         <div className="max-w-7xl mx-auto px-5 dark:bg-gray-100 dark:text-gray-900">
             <div className="container grid grid-cols-12 mx-auto">
-                <div className="flex flex-col justify-center col-span-12 align-middle dark:bg-gray-300 bg-no-repeat bg-cover lg:col-span-6 lg:h-auto">
-                    <img className="rounded-xl" src={image} alt="" />
+                <div className="flex flex-col justify-center col-span-12 items-center lg:col-span-6 lg:h-auto">
+                    <img className="w-60" src={image} alt="" />
                 </div>
                 <div className="flex flex-col col-span-12 p-6 divide-y lg:col-span-6 lg:p-10 dark:divide-gray-300">
                     <div className="pt-6 pb-4 space-y-2">

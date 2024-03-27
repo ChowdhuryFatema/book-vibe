@@ -11,9 +11,9 @@ const BookCard = ({book}) => {
 
     return (
         <Link to={`/book/${bookId}`} className="flex flex-col dark:bg-gray-50 border border-[#13131326] rounded-2xl p-4">
-            <a>
-                <img alt="" className="w-full rounded-2xl h-60 dark:bg-gray-500 object-cover" src={image} />
-            </a>
+            <div className='flex justify-center items-center h-60 bg-[#F3F3F3] rounded-xl'>
+                <img alt="" className="" src={image} />
+            </div>
             <div className="flex flex-col flex-1 py-5 space-y-2">
                 <ul className='flex flex-wrap gap-2'>
                     {

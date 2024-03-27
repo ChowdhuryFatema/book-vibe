@@ -7,8 +7,8 @@ import ReadCard from "./ReadCard";
 
 const ReadBooks = () => {
 
-    const [displayReadBooks, setDisplayReadBooks] = useState([]);
     const books = useLoaderData()
+    const [displayReadBooks, setDisplayReadBooks] = useState([]);
     const [sortedRating, setSortedRating] = useState([]);
     const [sortedTotalPages, setSortedTotalPages] = useState([]);
     const [sortedPublishYear, setSortedPublishYear] = useState([]);
@@ -49,7 +49,9 @@ const ReadBooks = () => {
     return (
         <div>
 
-            <div className="text-center">
+            {
+                displayReadBooks.length > 0 &&
+                <div className="text-center">
                 <details className="dropdown mb-5">
                     <summary className="m-1 btn text-white bg-[#23BE0A] hover:bg-[#37ce20] md:text-lg">Sort By
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="w-5 h-5">
@@ -66,6 +68,9 @@ const ReadBooks = () => {
                     </ul>
                 </details>
             </div>
+            }
+
+            
 
             {
                 displayReadBooks.map(book => <ReadCard key={book.bookId} book={book}></ReadCard>)
