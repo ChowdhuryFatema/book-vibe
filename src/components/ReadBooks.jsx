@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredBooks } from "../utlis/localStorage";
 import ReadCard from "./ReadCard";
+import EmptyState from "./EmptyState";
 
 
 
@@ -44,6 +45,16 @@ const ReadBooks = () => {
         const sortPublisherYear = displayReadBooks.sort((a, b) => 
         b.yearOfPublishing - a.yearOfPublishing)
         setSortedPublishYear(sortPublisherYear)
+    }
+
+    if(displayReadBooks.length < 1){
+        return (
+            <EmptyState 
+            message={"You haven't read any book"}
+            address={`/`}
+            label={'Go Home'}
+            ></EmptyState>
+        )
     }
 
     return (

@@ -15,10 +15,9 @@ const ReadCard = ({ book }) => {
 
     return (
         <div className='max-w-5xl mx-auto px-5'>
-            <div className='grid grid-cols-1 md:grid-cols-12 gap-5 mb-5 border p-3 rounded-lg'>
-                <div className='col-span-auto w-full md:col-span-4'>
-                    <img className='rounded-lg w-full h-60 lg:h-72' 
-                    src={image} alt="" />
+            <div className='grid grid-cols-1 md:grid-cols-12 gap-5 mb-5 border p-4 rounded-lg'>
+                <div className='flex justify-center items-center col-span-auto w-full md:col-span-4 bg-[#1313130D] rounded-lg'>
+                    <img className='p-7 lg:p-0' src={image} alt="" />
                 </div>
                 <div className='col-span-auto md:col-span-8 mt-3'>
                     <div className='space-y-3 md:space-y-5'>

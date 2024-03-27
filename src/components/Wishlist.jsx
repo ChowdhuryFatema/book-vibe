@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredWishList } from "../utlis/localStorage";
 import ReadCard from "./ReadCard";
+import EmptyState from "./EmptyState";
 
 
 const Wishlist = () => {
@@ -46,6 +47,19 @@ const Wishlist = () => {
         setSortedPublishYear(sortPublisherYear)
     }
 
+
+    if(displayWishlist.length < 1){
+        return (
+            <EmptyState 
+            message={"No books have been added to the wishlist"}
+            address={`/`}
+            label={'Go Home'}
+            ></EmptyState>
+        )
+    }
+
+
+
     return (
         <div>
 
@@ -69,8 +83,6 @@ const Wishlist = () => {
                 </details>
             </div>
             }
-
-            
 
             {
                 displayWishlist.map((book, idx) => <ReadCard

@@ -1,12 +1,11 @@
+/* eslint-disable react/prop-types */
 
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import {ResponsiveContainer, BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 import { getStoredBooks } from '../utlis/localStorage';
 import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
-
-
 
 const getPath = (x, y, width, height) => {
     return `M${x},${y + height}C${x + width / 3},${y + height} ${x + width / 2},${y + height / 3}
@@ -20,27 +19,6 @@ const TriangleBar = (props) => {
 
     return <path d={getPath(x, y, width, height)} stroke="none" fill={fill} />;
 };
-
-
-
-
-const CustomTooltip = ({ active, payload, label }) => {
-    if (active && payload && payload.length) {
-        return (
-            <div className="custom-tooltip bg-white px-3 rounded-sm border shadow-2xl">
-
-                <p className="label font-semibold">{`${label}`}</p>
-                <p className="label text-teal-500 font-semibold">{`${payload[0].name} : ${payload[0].value}`}</p>
-            </div>
-        );
-    }
-
-    return null;
-};
-
-
-
-
 
 
 const PagesToRead = () => {
@@ -64,18 +42,11 @@ const PagesToRead = () => {
     }, [books])
 
 
-
-
-
-
-
-
     return (
-        <div className='flex flex-col justify-center items-center'>
-            <div className='max-w-7xl mx-auto p-10 mt-5 rounded-xl bg-[#13131308]'>
+        <div className='flex flex-col justify-center items-center mx-5'>
+            <div  style={{ width: '100%', height: 350 }} className='max-w-3xl mx-auto p-5 lg:p-10 mt-5 rounded-xl bg-[#13131308]'>
+            <ResponsiveContainer>
                     <BarChart
-                        width={900}
-                        height={400}
                         data={readBooks}
                         margin={{
                             top: 20,
@@ -92,10 +63,10 @@ const PagesToRead = () => {
                                 <Cell key={`cell-${index}`} fill={colors[index % 20]} />
                             ))}
                         </Bar>
-                        <Tooltip content={<CustomTooltip />} />
+                        <Tooltip />
                         <Legend />
                     </BarChart>
-
+                    </ResponsiveContainer>
             </div>
         </div>
 

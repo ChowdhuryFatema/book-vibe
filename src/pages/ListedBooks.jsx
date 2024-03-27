@@ -9,7 +9,7 @@ const ListedBooks = () => {
         <div className="max-w-7xl mx-auto px-5">
 
             <div className="bg-[#1313130D] rounded-md">
-                <h2 className="text-2xl md:text-3xl text-center py-10 font-bold">Books</h2>
+                <h2 className="text-2xl md:text-3xl text-center py-6 md:py-10 font-bold">Books</h2>
             </div>
 
 
