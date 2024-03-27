@@ -4,14 +4,13 @@ const Team = () => {
     return (
         <section className="dark:bg-gray-100 dark:text-gray-800">
             <div className="container flex flex-col items-center justify-center p-4 mx-auto sm:p-10">
-                <p className="p-2 text-sm font-medium tracking-wider text-center uppercase">Development team</p>
-                <h1 className="text-3xl font-bold leading-none text-center sm:text-5xl">The talented people behind the scenes</h1>
+                <h1 className="text-3xl font-bold leading-none text-center sm:text-5xl">Our Team</h1>
                 <div className="flex flex-row flex-wrap-reverse justify-center mt-8">
                     <div className="shadow-lg border flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-800 dark:text-gray-100">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?0" />
                         <div className="flex-1 my-4">
-                            <p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-                            <p>Visual Designer</p>
+                            <p className="text-xl font-semibold leading-snug">Rachel Barnes</p>
+                            <p>Author</p>
                         </div>
                         <div className="flex items-center justify-center p-3 space-x-3 border-t-2">
                             <a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-50 hover:dark:text-violet-600">
@@ -40,8 +39,8 @@ const Team = () => {
                     <div className="shadow-lg border flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-800 dark:text-gray-100">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?1" />
                         <div className="flex-1 my-4">
-                            <p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-                            <p>Visual Designer</p>
+                            <p className="text-xl font-semibold leading-snug ">onathan Miller</p>
+                            <p>Editor</p>
                         </div>
                         <div className="flex items-center justify-center p-3 space-x-3 border-t-2">
                             <a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-50 hover:dark:text-violet-600">
@@ -70,8 +69,8 @@ const Team = () => {
                     <div className="shadow-lg border flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-800 dark:text-gray-100">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?2" />
                         <div className="flex-1 my-4">
-                            <p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-                            <p>Visual Designer</p>
+                            <p className="text-xl font-semibold leading-snug">Olivia Watson</p>
+                            <p>Literary Agent</p>
                         </div>
                         <div className="flex items-center justify-center p-3 space-x-3 border-t-2">
                             <a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-50 hover:dark:text-violet-600">
@@ -100,8 +99,8 @@ const Team = () => {
                     <div className="shadow-lg border flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-800 dark:text-gray-100">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?3" />
                         <div className="flex-1 my-4">
-                            <p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-                            <p>Visual Designer</p>
+                            <p className="text-xl font-semibold leading-snug">Benjamin Carter</p>
+                            <p>Ghostwriter</p>
                         </div>
                         <div className="flex items-center justify-center p-3 space-x-3 border-t-2">
                             <a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-50 hover:dark:text-violet-600">
@@ -130,8 +129,8 @@ const Team = () => {
                     <div className="shadow-lg border flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-800 dark:text-gray-100">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?4" />
                         <div className="flex-1 my-4">
-                            <p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-                            <p>Visual Designer</p>
+                            <p className="text-xl font-semibold leading-snug">Sophia Roberts</p>
+                            <p>Book Publicist</p>
                         </div>
                         <div className="flex items-center justify-center p-3 space-x-3 border-t-2">
                             <a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-50 hover:dark:text-violet-600">
@@ -160,8 +159,8 @@ const Team = () => {
                     <div className="shadow-lg border flex flex-col justify-center w-full px-8 mx-6 my-12 text-center rounded-md md:w-96 lg:w-80 xl:w-64 dark:bg-gray-800 dark:text-gray-100">
                         <img alt="" className="self-center flex-shrink-0 w-24 h-24 -mt-12 bg-center bg-cover rounded-full dark:bg-gray-500" src="https://source.unsplash.com/100x100/?portrait?5" />
                         <div className="flex-1 my-4">
-                            <p className="text-xl font-semibold leading-snug">Leroy Jenkins</p>
-                            <p>Visual Designer</p>
+                            <p className="text-xl font-semibold leading-snug">Daniel Evans</p>
+                            <p>Copyeditor</p>
                         </div>
                         <div className="flex items-center justify-center p-3 space-x-3 border-t-2">
                             <a rel="noopener noreferrer" href="#" title="Email" className="dark:text-gray-50 hover:dark:text-violet-600">

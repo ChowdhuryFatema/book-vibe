@@ -21,7 +21,7 @@ const Header = () => {
                 <Link to='/' className="text-xl md:text-3xl font-bold">Book Vibe</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 *:mx-3 *:text-[16px] *:font-semibold">
+                <ul className="menu menu-horizontal px-2 *:mx-1 *:text-[16px] *:font-semibold">
                 <NavLink className='hover:bg-[#23BE0A] hover:text-white py-2 px-4 rounded-lg' to="/">Home</NavLink>
                 <NavLink className='hover:bg-[#23BE0A] hover:text-white py-2 px-4 rounded-lg' to="/listed-books">Listed Books</NavLink>
                 <NavLink className='hover:bg-[#23BE0A] hover:text-white py-2 px-4 rounded-lg' to='/pages-read'>Pages to Read</NavLink>

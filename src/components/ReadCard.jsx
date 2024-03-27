@@ -2,9 +2,11 @@ import PropTypes from 'prop-types';
 import { LuUsers } from "react-icons/lu";
 import { MdOutlineRestorePage } from "react-icons/md";
 import { CiLocationOn } from "react-icons/ci";
+import { Link } from 'react-router-dom';
 
 const ReadCard = ({ book }) => {
     const {
+        bookId,
         image, bookName,
         author, tags,
         yearOfPublishing,
@@ -42,7 +44,7 @@ const ReadCard = ({ book }) => {
                         <div className='flex flex-wrap gap-5 items-center'>                        
                         <button className="btn btn-sm rounded-full bg-sky-100 text-sky-500">Category: {category}</button>              
                         <button className="btn btn-sm rounded-full bg-red-100 text-red-500">Rating: {rating}</button>
-                        <a className="btn text-white bg-[#23BE0A] hover:bg-[#40df28]">View Details</a>
+                        <Link to={`/book/${bookId}`} className="btn text-white bg-[#23BE0A] hover:bg-[#40df28]">View Details</Link>
                         </div>
                     </div>
                 </div>
