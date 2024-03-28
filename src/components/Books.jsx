@@ -16,6 +16,8 @@ const Books = () => {
         .then(data => setBooks(data))
         setLoading(false)
     }, []);
+
+    
    
     return (
         <section className="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
