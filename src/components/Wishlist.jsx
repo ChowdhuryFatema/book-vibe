@@ -57,8 +57,6 @@ const Wishlist = () => {
         )
     }
 
-
-
     return (
         <div>
 

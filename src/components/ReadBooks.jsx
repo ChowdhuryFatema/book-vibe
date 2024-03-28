@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigation } from "react-router-dom";
 import { getStoredBooks } from "../utlis/localStorage";
 import ReadCard from "./ReadCard";
 import EmptyState from "./EmptyState";
+import LoaderSpinner from "./LoaderSpinner";
 
 
 
@@ -13,7 +14,7 @@ const ReadBooks = () => {
     const [sortedRating, setSortedRating] = useState([]);
     const [sortedTotalPages, setSortedTotalPages] = useState([]);
     const [sortedPublishYear, setSortedPublishYear] = useState([]);
-    
+    const navigation = useNavigation()
     
     useEffect(() => {
         if (books.length) {
@@ -86,7 +87,9 @@ const ReadBooks = () => {
 
             
 
-            {
+            {  
+                navigation.state === 'loading' ?  
+                <LoaderSpinner></LoaderSpinner> :
                 displayReadBooks.map(book => <ReadCard key={book.bookId} book={book}></ReadCard>)
             }
         </div>
