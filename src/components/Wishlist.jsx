@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData} from "react-router-dom";
 import { getStoredWishList } from "../utlis/localStorage";
 import ReadCard from "./ReadCard";
 import EmptyState from "./EmptyState";
@@ -12,8 +12,7 @@ const Wishlist = () => {
     const [sortedRating, setSortedRating] = useState([]);
     const [sortedTotalPages, setSortedTotalPages] = useState([]);
     const [sortedPublishYear, setSortedPublishYear] = useState([]);
-
-    console.log(displayWishlist)
+  
 
     useEffect(() => {
 

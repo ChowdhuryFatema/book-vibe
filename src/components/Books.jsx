@@ -6,13 +6,14 @@ import BookCard from "./BookCard";
 const Books = () => {
 
     const [books, setBooks] = useState([]);
+    
 
     useEffect(() => {
         fetch('books.json')
         .then(res => res.json())
         .then(data => setBooks(data))
     }, []);
-
+   
     return (
         <section className="py-6 sm:py-12 dark:bg-gray-100 dark:text-gray-800">
         <div className="container p-6 mx-auto space-y-8">

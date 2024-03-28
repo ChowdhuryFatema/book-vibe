@@ -14,6 +14,7 @@ const ReadBooks = () => {
     const [sortedTotalPages, setSortedTotalPages] = useState([]);
     const [sortedPublishYear, setSortedPublishYear] = useState([]);
     
+    
     useEffect(() => {
         if (books.length) {
             const storedReadBook = getStoredBooks();
@@ -34,7 +35,9 @@ const ReadBooks = () => {
     const handleRatingSort = () => {
         const sortRating =  displayReadBooks.sort((a, b) => b.rating - a.rating )
         setSortedRating(sortRating)
+        
     }
+    
 
     const handlePageNumSort = () => {
         const sortPages = displayReadBooks.sort((a, b) => b.totalPages - a.totalPages )
